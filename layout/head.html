@@ -1,0 +1,56 @@
+	<!-- header -->
+	<div id="header">
+		<h2 id="logo">
+			<a href="../main/main.html">
+				<img src="../../assets/images/logo.jpg" alt="오산독산성문화제">
+			</a>
+		</h2>
+		<div class="hd_rcnt">
+			<div class="hd_search">
+				<button type="button" class="search" onclick="$('.search_form').fadeIn();">검색열기</button>
+				<div class="search_form clearfix">
+					<form action="">
+						<input type="text" placeholder="검색어를 입력해주세요.">
+						<button type="submit" class="btn_search">검색하기</button>
+						<button type="button" class="btn_close" onclick="$('.search_form').fadeOut();">검색닫기</button>
+					</form>
+				</div>
+			</div>
+			<button type="button" class="mb_menu"><span class="sound_only">메뉴</span><strong></strong><strong></strong><strong></strong></button>
+		</div>
+		<ul id="nav">                                                            
+			<li><a href="../wiset/greeting.html" class="nav_f <?if($menu_focus=='1'){?>active<?}?>">오산독산성문화제</a>
+				<ul>
+					<li><a href="../wiset/greeting.html">행사안내</a></li>
+					<li><a href="../wiset/business.html">행사연혁</a></li>
+					<li><a href="../wiset/business.html">행사사진</a></li>
+					<li><a href="../wiset/location.html">오산독산성</a></li>
+					<li><a href="../wiset/location.html">세마대 유래</a></li>
+				</ul>
+			</li>
+			<li><a href="../program/program1.html" class="nav_f  <?if($menu_focus=='2'){?>active<?}?>">프로그램</a></li>
+			<li><a href="../bbs/list1.html" class="nav_f  <?if($menu_focus=='3'){?>active<?}?>">커뮤니티</a>
+				<ul>
+					<li><a href="../bbs/list1.html">공지사항</a></li>
+					<li><a href="../bbs/list2.html">포토갤러리</a></li>
+				</ul>
+			</li>
+		</ul>
+		<span class="nav_bg"></span>
+		<script>
+		$('.nav_bg').click(function(){
+			$('#nav').animate({right: "-80%"}, {
+				duration: 500}
+			);
+			$('.nav_bg').fadeOut();
+		});
+		$('.mb_menu').click(function(){
+			$('#nav').animate({right: "0"}, {
+				duration: 500}
+			);
+			$('.nav_bg').fadeIn();
+		});
+		
+	</script>
+	</div>
+	<!-- //header -->	

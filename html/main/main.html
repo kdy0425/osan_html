@@ -1,0 +1,94 @@
+ <?
+include_once('../../layout/head.sub.html');
+?>
+<!-- wrap -->
+<div id="layout">
+<?
+include_once('../../layout/head.html');
+?>
+<div id="content" class="main_content">
+	<div class="main_visual">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div id="" class="mv_img" style="background-image:url('../../assets/images/main_visual.jpg');"></div><!-- pc -->
+					<div id="" class="mv_img_mobile" style="background-image:url('../../assets/images/dummy/thum1.jpg');"></div><!-- mobile -->
+				</div>
+				<div class="swiper-slide">
+					<div id="" class="mv_img" style="background-image:url('../../assets/images/main_visual.jpg');"></div><!-- pc -->
+					<div id="" class="mv_img_mobile" style="background-image:url('../../assets/images/dummy/thum1.jpg');"></div><!-- mobile -->
+				</div>
+				<div class="swiper-slide">
+					<div id="" class="mv_img" style="background-image:url('../../assets/images/main_visual.jpg');"></div><!-- pc -->
+					<div id="" class="mv_img_mobile" style="background-image:url('../../assets/images/dummy/thum1.jpg');"></div><!-- mobile -->
+				</div>
+			</div>
+			<div class="swiper-button-prev swiper-button-white"></div>
+			<div class="swiper-button-next swiper-button-white"></div>
+		</div>
+		<div class="swiper-pagination">	</div>
+	</div>
+	<script>
+		var swiper = new Swiper('.main_visual .swiper-container', {
+			pagination: {
+			  el: ".main_visual .swiper-pagination",
+			},
+			speed: 800,
+			loop : true,
+			autoplay: {
+				delay: 2500,
+			  },
+			navigation: {
+			  nextEl: ".main_visual .swiper-button-next",
+			  prevEl: ".main_visual .swiper-button-prev",
+			},
+		});
+	</script>
+
+	<div class="main_middle container">
+		<div class="main_qlink">
+			<h2>바로가기</h2>
+			<div class="qlink_list">
+				<a href="javascript:;" class="item h">
+					<span class="tit">행사안내</span>
+					<span class="cnt">간략한 설명글 영역입니다.</span>
+				</a>
+				<a href="javascript:;" class="item d">
+					<span class="tit">드림용어 사전</span>
+					<span class="cnt">간략한 설명글 영역입니다.</span>
+				</a>
+				<a href="javascript:;" class="item v">
+					<span class="tit">뷰어 다운로드</span>
+					<span class="cnt">간략한 설명글 영역입니다.</span>
+				</a>
+				<a href="javascript:;" class="item n">
+					<span class="tit">뉴스레터 신청</span>
+					<span class="cnt">간략한 설명글 영역입니다.</span>
+				</a>
+			</div>
+		</div>
+		<div class="main_lst">
+			<h2>공지사항</h2>
+			<div class="lst">
+				<div class="item"><a href="../bbs/detail.html">2022년 (재)오산문화재단 7차 기간제 근로자 채용공고2022년 (재)오산문화재단 7차 기간제 근로자 채용공고</a></div>
+				<div class="item"><a href="../bbs/detail.html">2022년 (재)오산문화재단 7차 기간제 근로자 채용공고</a></div>
+				<div class="item"><a href="../bbs/detail.html">2022년 (재)오산문화재단 7차 기간제 근로자 채용공고</a></div>
+				<div class="item"><a href="../bbs/detail.html">2022년 (재)오산문화재단 7차 기간제 근로자 채용공고</a></div>
+			</div>
+			<a href="../bbs/list1.html" class="lst_more">바로가기</a>
+		</div>
+	</div>
+</div>
+
+
+<?
+include_once('../../layout/tail.html');
+?>
+</div>
+<!-- //wrap -->
+<?
+include_once('../../layout/tail.sub.html');
+?>
+
+</body>
+</html>
