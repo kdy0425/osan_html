@@ -41,18 +41,19 @@
 			</li>
 		</ul>
 		<span class="nav_bg"></span>
+		<button type="button" class="nav_close">메뉴닫기</button>
 		<script>
-		$('.nav_bg').click(function(){
+		$('.nav_bg,.nav_close').click(function(){
 			$('#nav').animate({right: "-80%"}, {
 				duration: 500}
 			);
-			$('.nav_bg').fadeOut();
+			$('.nav_bg,.nav_close').fadeOut();
 		});
 		$('.mb_menu').click(function(){
 			$('#nav').animate({right: "0"}, {
 				duration: 500}
 			);
-			$('.nav_bg').fadeIn();
+			$('.nav_bg,.nav_close').fadeIn();
 		});
 		
 	</script>
